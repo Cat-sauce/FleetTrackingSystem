@@ -1,7 +1,7 @@
 import MarkerClusterGroup from "react-leaflet-cluster";
 import "react-leaflet-cluster/dist/assets/MarkerCluster.css";
 import "react-leaflet-cluster/dist/assets/MarkerCluster.Default.css";
-import "../styles/fleetMap.css";
+import "../styles/FleetMap.css";
 import "leaflet/dist/leaflet.css";
 import {
     MapContainer,
