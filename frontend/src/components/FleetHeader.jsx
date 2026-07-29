@@ -1,4 +1,4 @@
-import "../styles/fleetHeader.css";
+import "../styles/FleetHeader.css";
 
 export default function FleetHeader() {
     return (
