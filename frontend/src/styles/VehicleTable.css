@@ -1,0 +1,311 @@
+/* =========================================================
+   TABLE CARD
+========================================================= */
+
+.vehicle-table-card{
+
+    flex:2;
+
+    background:linear-gradient(180deg,#1d232c,#171c23);
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    overflow:hidden;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.30);
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.vehicle-table-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:24px 28px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.vehicle-table-header h2{
+
+    color:white;
+
+    font-size:22px;
+
+    margin:0;
+
+}
+
+.vehicle-table-header span{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.vehicle-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.vehicle-table thead{
+
+    background:#11161d;
+
+}
+
+.vehicle-table th{
+
+    padding:18px;
+
+    color:#8e99ab;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.vehicle-table td{
+
+    padding:18px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+/* =========================================================
+   ROWS
+========================================================= */
+
+.vehicle-row{
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.vehicle-row:nth-child(even){
+
+    background:rgba(255,255,255,.015);
+
+}
+
+.vehicle-row:hover{
+
+    background:rgba(37,99,235,.10);
+
+}
+
+.active-row{
+
+    background:rgba(37,99,235,.16);
+
+}
+
+
+/* =========================================================
+   VEHICLE ID
+========================================================= */
+
+.vehicle-id{
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status-pill{
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.status-pill.healthy{
+
+    background:rgba(16,185,129,.15);
+
+    color:#10b981;
+
+}
+
+.status-pill.warning{
+
+    background:rgba(245,158,11,.15);
+
+    color:#f59e0b;
+
+}
+
+.status-pill.critical{
+
+    background:rgba(239,68,68,.15);
+
+    color:#ef4444;
+
+}
+
+
+/* =========================================================
+   FUEL
+========================================================= */
+
+.fuel-normal{
+
+    color:#22c55e;
+
+    font-weight:600;
+
+}
+
+.fuel-low{
+
+    color:#ef4444;
+
+    font-weight:700;
+
+}
+
+
+/* =========================================================
+   TEMPERATURE
+========================================================= */
+
+.temp-normal{
+
+    color:#38bdf8;
+
+    font-weight:600;
+
+}
+
+.temp-high{
+
+    color:#ef4444;
+
+    font-weight:700;
+
+}
+
+.vehicle-table-header p{
+    color:#7b8798;
+    margin-top:6px;
+    font-size:14px;
+}
+
+.vehicle-count{
+    background:#2563eb22;
+    color:#3b82f6;
+    padding:8px 16px;
+    border-radius:999px;
+    font-weight:600;
+}
+
+.vehicle-info{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.vehicle-avatar{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#2563eb;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    box-shadow:0 0 16px rgba(37,99,235,.35);
+}
+
+.vehicle-driver{
+    color:#8e99ab;
+    font-size:13px;
+    margin-top:4px;
+}
+
+.speed-cell{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-weight:700;
+}
+
+.speed-cell small{
+    color:#7b8798;
+    font-size:11px;
+}
+
+.progress-cell{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.progress-track{
+    width:90px;
+    height:8px;
+    background:#11161d;
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    height:100%;
+    border-radius:999px;
+    transition:width .4s ease;
+}
+
+.vehicle-row{
+    transition:.25s;
+}
+
+.vehicle-row:hover{
+    transform:scale(1.01);
+}
+
+.active-row{
+    background:rgba(37,99,235,.18);
+    box-shadow:inset 4px 0 #3b82f6;
+}

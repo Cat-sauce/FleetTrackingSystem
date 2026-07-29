@@ -1,0 +1,142 @@
+.map-card{
+
+    position:relative;
+
+    background:linear-gradient(180deg,#1a1f27,#14181f);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+
+    margin-top:30px;
+}
+
+.map-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 28px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.map-title{
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:700;
+}
+
+.map-subtitle{
+
+    margin-top:6px;
+
+    color:#7d8798;
+
+    font-size:14px;
+}
+
+.map-pill-group{
+
+    display:flex;
+
+    gap:12px;
+}
+
+.status-pill{
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+.status-green{
+
+    background:rgba(16,185,129,.15);
+
+    color:#10b981;
+
+    border:1px solid rgba(16,185,129,.35);
+}
+
+.status-blue{
+
+    background:rgba(59,130,246,.15);
+
+    color:#3b82f6;
+
+    border:1px solid rgba(59,130,246,.35);
+}
+
+.status-purple{
+
+    background:rgba(139,92,246,.15);
+
+    color:#8b5cf6;
+
+    border:1px solid rgba(139,92,246,.35);
+}
+
+.fleet-overlay{
+
+    position:absolute;
+
+    top:120px;
+
+    left:20px;
+
+    z-index:1000;
+
+    min-width:220px;
+
+    background:rgba(15,18,24,.82);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:18px 20px;
+
+    color:white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+.overlay-title{
+
+    font-size:14px;
+
+    color:#9ca3af;
+
+    margin-bottom:6px;
+}
+
+.overlay-number{
+
+    font-size:34px;
+
+    font-weight:700;
+}
+
+.overlay-sub{
+
+    color:#3b82f6;
+
+    font-size:13px;
+}

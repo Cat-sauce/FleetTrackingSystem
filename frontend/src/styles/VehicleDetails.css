@@ -1,0 +1,211 @@
+.vehicle-details-card{
+
+    width:360px;
+
+    background:linear-gradient(180deg,#1d232c,#171c23);
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    padding:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.30);
+
+}
+
+.vehicle-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+.vehicle-top h2{
+
+    margin:0;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+.vehicle-top p{
+
+    margin-top:6px;
+
+    color:#94a3b8;
+
+}
+
+.vehicle-status{
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.details-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:14px;
+
+    margin-bottom:24px;
+
+}
+
+.detail-box{
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#11161d;
+
+}
+
+.detail-box span{
+
+    display:block;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+    margin-bottom:6px;
+
+}
+
+.detail-box strong{
+
+    color:white;
+
+}
+
+.telemetry{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.telemetry-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:8px;
+
+}
+
+.telemetry-header span{
+
+    color:#94a3b8;
+
+}
+
+.telemetry-header strong{
+
+    color:white;
+
+}
+
+.progress{
+
+    height:10px;
+
+    background:#11161d;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:999px;
+
+    transition:width .8s ease;
+
+}
+
+.progress-fill.fuel{
+
+    background:#22c55e;
+
+}
+
+.progress-fill.temp{
+
+    background:#ef4444;
+
+}
+
+.progress-fill.speed{
+
+    background:#3b82f6;
+
+}
+
+.obd-box{
+
+    margin-top:26px;
+
+    padding:18px;
+
+    background:#11161d;
+
+    border-radius:14px;
+
+}
+
+.obd-box span{
+
+    display:block;
+
+    color:#94a3b8;
+
+    margin-bottom:8px;
+
+}
+
+.obd-box strong{
+
+    color:white;
+
+}
+
+.empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+}

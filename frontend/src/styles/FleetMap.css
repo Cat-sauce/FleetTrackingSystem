@@ -1,0 +1,796 @@
+/* =========================================================
+   FLEET MAP CONTAINER
+========================================================= */
+
+.fleet-map-card{
+
+    position:relative;
+
+    width:100%;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    background:linear-gradient(180deg,#1b2028,#171b22);
+
+    box-shadow:0 22px 60px rgba(0,0,0,.35);
+
+}
+
+.fleet-map{
+
+    width:100%;
+
+    height:520px;
+
+    z-index:1;
+
+}
+
+
+/* =========================================================
+   FLOATING STATUS CARD
+========================================================= */
+
+.fleet-status-card{
+
+    position:absolute;
+
+    top:22px;
+
+    left:22px;
+
+    z-index:1000;
+
+    width:260px;
+
+    padding:22px;
+
+    border-radius:18px;
+
+    background:rgba(15,20,28,.90);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+
+}
+
+.fleet-status-title{
+
+    color:#8e99ac;
+
+    font-size:13px;
+
+    letter-spacing:.5px;
+
+    text-transform:uppercase;
+
+}
+
+.fleet-status-number{
+
+    margin-top:8px;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:white;
+
+}
+
+.fleet-status-label{
+
+    color:#3b82f6;
+
+    font-size:14px;
+
+    margin-top:4px;
+
+}
+
+.fleet-status-divider{
+
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+    margin:18px 0;
+
+}
+
+.fleet-mini-stats{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    color:white;
+
+    font-size:14px;
+
+}
+
+.moving-dot,
+.idle-dot,
+.legend-green,
+.legend-yellow,
+.legend-red{
+
+    display:inline-block;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    margin-right:10px;
+
+}
+
+.moving-dot{
+
+    background:#10b981;
+
+    box-shadow:0 0 10px #10b981;
+
+}
+
+.idle-dot{
+
+    background:#f59e0b;
+
+    box-shadow:0 0 10px #f59e0b;
+
+}
+
+
+/* =========================================================
+   LEGEND
+========================================================= */
+
+.fleet-legend{
+
+    position:absolute;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:1000;
+
+    background:rgba(15,20,28,.92);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    padding:18px;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    min-width:150px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+.legend-green{
+
+    background:#10b981;
+
+}
+
+.legend-yellow{
+
+    background:#f59e0b;
+
+}
+
+.legend-red{
+
+    background:#ef4444;
+
+}
+
+
+/* =========================================================
+   POPUP
+========================================================= */
+
+.fleet-popup{
+
+    min-width:240px;
+
+}
+
+.popup-title{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+.popup-driver{
+
+    margin-top:4px;
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+.popup-divider{
+
+    height:1px;
+
+    background:#e5e7eb;
+
+    margin:14px 0;
+
+}
+
+.popup-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:8px 0;
+
+    font-size:14px;
+
+}
+
+.leaflet-popup-content .popup-row span{
+    color:#94a3b8 !important;
+}
+
+.leaflet-popup-content .popup-row strong{
+    color:#fff !important;
+}
+
+
+/* =========================================================
+   LEAFLET OVERRIDES
+========================================================= */
+
+.leaflet-popup-content{
+
+    margin:16px;
+
+}
+
+.leaflet-popup-content-wrapper{
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.leaflet-container{
+
+    font-family:Inter,sans-serif;
+
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.fleet-map-card ::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.fleet-map-card ::-webkit-scrollbar-thumb{
+
+    background:#394150;
+
+    border-radius:999px;
+
+}
+
+.fleet-status-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.status-live{
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:rgba(16,185,129,.18);
+
+    color:#10b981;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    border:1px solid rgba(16,185,129,.45);
+
+}
+
+.fleet-mini-stats{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.mini-stat{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.mini-stat strong{
+
+    display:block;
+
+    color:white;
+
+    font-size:17px;
+
+}
+
+.mini-stat small{
+
+    color:#8e99ac;
+
+    font-size:12px;
+
+}
+
+/* ------------------------------
+   Truck Marker
+--------------------------------*/
+
+.truck-marker{
+
+    position:relative;
+
+    width:42px;
+
+    height:42px;
+
+    transition:transform .35s ease;
+
+}
+
+/* glowing pulse */
+
+.pulse-ring{
+
+    position:absolute;
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.28);
+
+    animation:pulseMarker 2s infinite;
+
+}
+
+/* truck */
+
+.truck-icon{
+
+    position:absolute;
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-size:20px;
+
+    box-shadow:
+        0 0 20px rgba(37,99,235,.6),
+        0 8px 18px rgba(0,0,0,.35);
+
+    border:2px solid white;
+
+    animation:truckFloat 2.5s ease-in-out infinite;
+
+}
+
+/* animation */
+
+@keyframes truckFloat{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-4px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@keyframes pulseMarker{
+
+    0%{
+        transform:scale(.6);
+        opacity:.8;
+    }
+
+    70%{
+        transform:scale(1.8);
+        opacity:0;
+    }
+
+    100%{
+        opacity:0;
+    }
+
+}
+
+.leaflet-popup-content{
+
+    color:white;
+
+}
+
+.leaflet-popup-content *{
+
+    color:white;
+
+}
+
+.popup-title{
+
+    color:#3b82f6 !important;
+
+}
+
+.popup-driver{
+
+    color:#94a3b8 !important;
+
+}
+
+.fleet-map{
+
+    width:100%;
+
+    height:520px;
+
+}
+
+.leaflet-container{
+
+    background:#0f172a;
+
+}
+
+.leaflet-control-container{
+
+    z-index:400;
+
+}
+
+.selected-marker{
+
+    z-index:9999;
+
+}
+
+.selected-ring{
+
+    animation:selectedPulse 1.2s infinite;
+
+}
+
+.selected-truck{
+
+    background:#2563eb;
+
+    transform:scale(1.25);
+
+    box-shadow:
+        0 0 40px rgba(37,99,235,.95),
+        0 0 80px rgba(37,99,235,.55);
+
+}
+
+@keyframes selectedPulse{
+
+    0%{
+
+        transform:scale(.8);
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:scale(2.2);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ---------- Fleet Card ---------- */
+
+.fleet-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.fleet-header h4{
+
+    color:white;
+
+    margin:0;
+
+    font-size:18px;
+
+}
+
+.fleet-header span{
+
+    color:#8b98aa;
+
+    font-size:12px;
+
+}
+
+.live-pill{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+box-shadow:0 0 0 0 rgba(16,185,129,.45);
+}
+
+70%{
+box-shadow:0 0 0 10px rgba(16,185,129,0);
+}
+
+100%{
+box-shadow:0 0 0 0 rgba(16,185,129,0);
+}
+
+}
+
+.fleet-total{
+
+    font-size:52px;
+
+    color:white;
+
+    font-weight:800;
+
+    margin-top:20px;
+
+}
+
+.fleet-total-label{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+.fleet-divider{
+
+    height:1px;
+
+    margin:22px 0;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.fleet-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+
+    margin-top:20px;
+
+}
+
+.fleet-stat{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.fleet-icon{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+}
+
+.fleet-icon.moving{
+
+    background:#10b98122;
+
+}
+
+.fleet-icon.idle{
+
+    background:#f59e0b22;
+
+}
+
+.fleet-stat strong{
+
+    display:block;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+.fleet-stat small{
+
+    color:#94a3b8;
+
+}
+
+/* ---------- Legend ---------- */
+
+.legend-title{
+
+    color:white;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.legend-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#d7dce4;
+
+    margin-top:8px;
+
+}
+
+.fleet-title-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.fleet-title-row h3{
+
+    margin:0;
+
+    color:white;
+
+    font-size:22px;
+
+}
+
+.fleet-title-row p{
+
+    margin-top:4px;
+
+    color:#8e99ac;
+
+    font-size:13px;
+
+}
+
+.fleet-icon.warning{
+
+    background:rgba(251,191,36,.15);
+
+    color:#fbbf24;
+
+}
+
+.fleet-icon.critical{
+
+    background:rgba(239,68,68,.15);
+
+    color:#ef4444;
+
+}

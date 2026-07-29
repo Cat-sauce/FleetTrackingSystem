@@ -1,0 +1,182 @@
+/* =========================================================
+   FILTER BAR
+========================================================= */
+
+.vehicle-filters{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+    margin:28px 0;
+
+    padding:22px;
+
+    background:linear-gradient(180deg,#1d232c,#181d25);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.28);
+
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.vehicle-search{
+
+    flex:1;
+
+    display:flex;
+
+}
+
+.vehicle-search input{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:#11161d;
+
+    color:white;
+
+    font-size:15px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.25s;
+
+}
+
+.vehicle-search input::placeholder{
+
+    color:#798394;
+
+}
+
+.vehicle-search input:focus{
+
+    border-color:#3b82f6;
+
+    box-shadow:0 0 12px rgba(59,130,246,.35);
+
+}
+
+
+/* =========================================================
+   DROPDOWNS
+========================================================= */
+
+.vehicle-select{
+
+    width:180px;
+
+}
+
+.vehicle-select select{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 42px 0 18px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:12px;
+
+    background:#11161d;
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:0.25s;
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+    -moz-appearance:none;
+
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+
+    background-repeat:no-repeat;
+
+    background-position:right 14px center;
+
+    background-size:14px;
+
+}
+
+.vehicle-select select:hover{
+
+    border-color:#2563eb;
+
+}
+
+.vehicle-select select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.35);
+
+}
+
+
+/* =========================================================
+   RESET BUTTON
+========================================================= */
+
+.reset-filter-btn{
+
+    padding:0px 22px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.reset-filter-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}

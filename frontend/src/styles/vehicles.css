@@ -1,0 +1,471 @@
+/* ===========================
+   PAGE LAYOUT
+=========================== */
+
+.vehicles-layout{
+    display:flex;
+}
+
+.vehicles-content{
+    flex:1;
+    padding:28px;
+    background:#0d1117;
+    min-height:100vh;
+}
+
+
+/* ===========================
+   PAGE HEADER
+=========================== */
+
+.vehicles-header{
+    margin-bottom:24px;
+}
+
+.vehicles-header h1{
+    margin:0;
+    color:white;
+    font-size:44px;
+    font-weight:800;
+    letter-spacing:-1px;
+}
+
+.vehicles-header p{
+    margin-top:8px;
+    color:#8e99ac;
+    font-size:18px;
+}
+
+
+/* ===========================
+   MAP CARD
+=========================== */
+
+.vehicles-map-card{
+
+    background:linear-gradient(180deg,#1b2028,#181d25);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    box-shadow:0 20px 55px rgba(0,0,0,.35);
+
+    margin-bottom:28px;
+}
+
+.vehicles-map-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:24px 30px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.vehicles-map-top h2{
+
+    margin:0;
+
+    color:white;
+
+    font-size:30px;
+}
+
+.vehicles-map-top p{
+
+    margin-top:8px;
+
+    color:#8e99ac;
+}
+
+.vehicles-map-badges{
+
+    display:flex;
+
+    gap:14px;
+}
+
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    font-size:14px;
+}
+
+.badge.green{
+
+    color:#00d68f;
+
+    background:rgba(0,214,143,.12);
+
+    border:1px solid rgba(0,214,143,.35);
+}
+
+.badge.blue{
+
+    color:#3b82f6;
+
+    background:rgba(59,130,246,.12);
+
+    border:1px solid rgba(59,130,246,.35);
+}
+
+.badge.purple{
+
+    color:#b66dff;
+
+    background:rgba(182,109,255,.12);
+
+    border:1px solid rgba(182,109,255,.35);
+}
+
+
+/* ===========================
+   FILTER BAR
+=========================== */
+
+.vehicles-filters{
+
+    display:flex;
+
+    gap:16px;
+
+    margin:28px 0;
+}
+
+.vehicle-search{
+
+    flex:1;
+
+    background:#1b2028;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    color:white;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.25s;
+}
+
+.vehicle-search:focus{
+
+    border-color:#3b82f6;
+
+    box-shadow:0 0 0 3px rgba(59,130,246,.15);
+}
+
+.vehicle-search::placeholder{
+
+    color:#798396;
+}
+
+.vehicle-select{
+
+    width:140px;
+
+    background:#1b2028;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:12px;
+
+    padding:0 15px;
+
+    font-size:15px;
+
+    outline:none;
+}
+
+
+/* ===========================
+   MAIN SECTION
+=========================== */
+
+.vehicle-main{
+
+    display:flex;
+
+    gap:24px;
+
+    align-items:flex-start;
+}
+
+
+/* ===========================
+   TABLE CARD
+=========================== */
+
+.vehicle-table-card{
+
+    flex:2;
+
+    background:linear-gradient(180deg,#1b2028,#181d24);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.vehicle-table-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.vehicle-table-header h2{
+
+    margin:0;
+
+    color:white;
+
+    font-size:30px;
+}
+
+.vehicle-table-header span{
+
+    background:#234bff20;
+
+    color:#3b82f6;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(59,130,246,.25);
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+
+/* ===========================
+   TABLE
+=========================== */
+
+.vehicle-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+.vehicle-table thead th{
+
+    color:#8d98aa;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    padding:16px 12px;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    letter-spacing:.5px;
+}
+
+.vehicle-table tbody td{
+
+    padding:18px 12px;
+
+    text-align:center;
+
+    color:white;
+
+    border-bottom:1px solid rgba(255,255,255,.04);
+
+    transition:.25s;
+}
+
+.vehicle-row{
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.vehicle-row:hover{
+
+    background:#202733;
+}
+
+.vehicle-row:hover td{
+
+    color:#5ea0ff;
+}
+
+
+/* ===========================
+   DETAILS PANEL
+=========================== */
+
+.vehicle-main > div:last-child{
+
+    flex:1;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+    .vehicle-main{
+
+        flex-direction:column;
+    }
+
+    .vehicle-main > div{
+
+        width:100%;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .vehicles-map-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+    }
+
+    .vehicles-filters{
+
+        flex-direction:column;
+    }
+
+    .vehicle-select{
+
+        width:100%;
+    }
+
+}
+
+/* ===========================
+   STATUS PILLS
+=========================== */
+
+.status-pill{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:95px;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+}
+
+.status-pill.healthy{
+
+    color:#12d18e;
+
+    background:rgba(18,209,142,.12);
+
+    border:1px solid rgba(18,209,142,.35);
+}
+
+.status-pill.warning{
+
+    color:#ffb547;
+
+    background:rgba(255,181,71,.12);
+
+    border:1px solid rgba(255,181,71,.35);
+}
+
+.status-pill.critical{
+
+    color:#ff5b5b;
+
+    background:rgba(255,91,91,.12);
+
+    border:1px solid rgba(255,91,91,.35);
+}
+
+.vehicle-id{
+
+    font-weight:700;
+
+    color:#5fa8ff;
+
+    letter-spacing:.5px;
+}
+
+.fuel-normal{
+
+    color:#37d99f;
+
+    font-weight:600;
+}
+
+.fuel-low{
+
+    color:#ff6262;
+
+    font-weight:700;
+}
+
+.temp-normal{
+
+    color:#ffffff;
+}
+
+.temp-high{
+
+    color:#ff8b4a;
+
+    font-weight:700;
+}

@@ -1,0 +1,804 @@
+.analytics-layout{
+    display:flex;
+    background:#0d1117;
+    min-height:100vh;
+}
+
+.analytics-content{
+    flex:1;
+    margin-top: 0px;
+    padding:32px;
+}
+
+.analytics-header{
+    margin-bottom:32px;
+}
+
+.analytics-header h1{
+    margin:0;
+    color:white;
+    font-size:44px;
+    font-weight:800;
+}
+
+.analytics-header p{
+    margin-top:8px;
+    color:#8e99ac;
+    font-size:18px;
+}
+
+/* SECTION */
+
+.analytics-section{
+    margin-top:34px;
+}
+
+.analytics-section-title{
+
+    color:white;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+/* TWO COLUMN GRID */
+
+.analytics-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:24px;
+
+}
+
+/* CARD */
+
+.analytics-card{
+
+    background:#1b2027;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+    transition:.3s;
+
+}
+
+.analytics-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.45);
+
+}
+
+.analytics-chart-card{
+
+    background:#1f242b;
+
+    border:1px solid #303844;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 8px 22px rgba(0,0,0,.25);
+
+    transition:all .25s ease;
+
+    padding-bottom:20px;
+
+}
+
+.analytics-chart-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 14px 28px rgba(0,0,0,.35);
+
+    border-color:#4b5563;
+
+}
+
+.chart-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:18px;
+
+}
+
+.chart-header h3{
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+
+.chart-header p{
+
+    margin-top:6px;
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+}
+
+.analytics-chart-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:24px;
+
+}
+
+.full-width{
+
+    grid-column:1 / span 2;
+
+}
+
+.analytics-section{
+
+    margin-top:35px;
+
+}
+
+.vehicle-health-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+
+    gap:24px;
+
+    margin-top:25px;
+
+}
+
+.vehicle-health-card{
+
+    background:#1b2027;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.35);
+
+    transition:.3s;
+
+}
+
+.vehicle-health-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.vehicle-health-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.vehicle-score{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.progress{
+
+    height:10px;
+
+    background:#2c3440;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin:18px 0;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:20px;
+
+}
+
+.vehicle-info{
+
+    display:grid;
+
+    gap:10px;
+
+}
+
+.vehicle-info div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#cbd5e1;
+
+}
+
+.vehicle-info strong{
+
+    color:white;
+
+}
+
+.vehicle-toggle-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.vehicle-health-toolbar{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+    margin-top: 50px;
+
+}
+
+.vehicle-health-toolbar input{
+
+    flex:1;
+
+    padding:10px 14px;
+
+    border-radius:8px;
+
+    border:none;
+
+    background:#1e293b;
+
+    color:white;
+
+}
+
+.vehicle-health-toolbar select{
+
+    padding:10px 14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#1e293b;
+
+    color:white;
+
+}
+
+.vehicle-health-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.vehicle-health-card{
+
+    background:#1b2027;
+
+    border-radius:14px;
+
+    padding:20px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.25s;
+
+}
+
+.vehicle-health-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.health-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.health-table th{
+
+    text-align:left;
+
+    padding:12px;
+
+    color:#94a3b8;
+
+}
+
+.health-table td{
+
+    padding:12px;
+
+    border-top:1px solid #2f3742;
+
+}
+
+.vehicle-search{
+
+    width:260px;
+
+    padding:10px;
+
+    margin:15px 0;
+
+    border-radius:8px;
+
+    border:none;
+
+    background:#20252b;
+
+    color:white;
+
+}
+
+.toggle-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.health-bar{
+
+    width:120px;
+
+    height:8px;
+
+    background:#2f3742;
+
+    border-radius:5px;
+
+    display:inline-block;
+
+    margin-right:10px;
+
+}
+
+.health-fill{
+
+    height:100%;
+
+    border-radius:5px;
+
+    background:#22c55e;
+
+}
+
+.status{
+
+    padding:4px 10px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+.status.excellent{
+
+    background:#14532d;
+
+    color:#4ade80;
+
+}
+
+.status.good{
+
+    background:#1e3a8a;
+
+    color:#60a5fa;
+
+}
+
+.status.needs-service{
+
+    background:#78350f;
+
+    color:#facc15;
+
+}
+
+.status.critical{
+
+    background:#7f1d1d;
+
+    color:#f87171;
+
+}
+
+.analytics-panel{
+
+    background:#1f242b;
+
+    border:1px solid #2e3742;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+
+}
+
+.analytics-panel-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    margin-bottom:22px;
+
+    padding-bottom:14px;
+
+    border-bottom:1px solid #2e3742;
+
+}
+
+.analytics-panel-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+}
+
+.analytics-panel-subtitle{
+
+    margin-top:4px;
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+.analytics-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:18px;
+
+}
+
+.analytics-table th{
+
+    background:#2b3139;
+
+    color:#dbeafe;
+
+    text-align:left;
+
+    padding:14px;
+
+    font-size:14px;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+.analytics-table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #313842;
+
+    color:#e5e7eb;
+
+}
+
+.analytics-table tbody tr{
+
+    transition:.2s;
+
+}
+
+.analytics-table tbody tr:nth-child(even){
+
+    background:#232930;
+
+}
+
+.analytics-table tbody tr:hover{
+
+    background:#2f3741;
+
+}
+
+.analytics-badge{
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.badge-green{
+
+    background:#14532d;
+
+    color:#bbf7d0;
+
+}
+
+.badge-yellow{
+
+    background:#78350f;
+
+    color:#fde68a;
+
+}
+
+.badge-red{
+
+    background:#7f1d1d;
+
+    color:#fecaca;
+
+}
+
+.badge-blue{
+
+    background:#1e3a8a;
+
+    color:#bfdbfe;
+
+}
+
+.driver-performance-divider{
+    margin-top:32px;
+}
+
+.insight-card{
+
+    background:#20252b;
+
+    border:1px solid #313944;
+
+    border-radius:14px;
+
+    padding:20px;
+
+    min-height:360px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+}
+
+.analytics-insights-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:24px;
+
+    align-items:stretch;
+
+}
+
+.insight-card-header{
+
+    margin-bottom:16px;
+
+}
+
+.insight-card-title{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+.insight-card-subtitle{
+
+    margin-top:4px;
+
+    font-size:13px;
+
+    color:#94a3b8;
+
+}
+
+.insight-divider{
+
+    height:1px;
+
+    background:#313944;
+
+    margin:14px 0 18px;
+
+}
+
+/* ================= TABLE STYLING ================= */
+
+.insight-card table{
+
+    width:100%;
+    table-layout:fixed;
+    border-collapse:collapse;
+
+}
+
+.insight-card th{
+
+    color:#9ca3af;
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    padding-bottom:10px;
+    padding:12px 10px;
+    text-align:left;
+
+}
+
+.insight-card td{
+
+    padding:8px 6px;
+    color:#f8fafc;
+    padding:12px 10px;
+    text-align:left;
+
+}
+
+.insight-card tbody tr{
+
+    transition:.2s ease;
+
+}
+
+.insight-card tbody tr:hover{
+
+    background:#2b313b;
+
+}
+
+.speed-badge{
+
+    background:#2563eb;
+    color:white;
+    padding:4px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+
+}
+
+.route-badge{
+
+    background:#313945;
+    color:#93c5fd;
+    padding:4px 10px;
+    border-radius:8px;
+    font-size:12px;
+    font-weight:600;
+
+}
+
+.temp-badge{
+
+    padding:4px 10px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+
+}
+
+.temp-badge.safe{
+
+    background:#14532d;
+    color:#86efac;
+
+}
+
+.temp-badge.warning{
+
+    background:#78350f;
+    color:#fde68a;
+
+}
+
+.temp-badge.danger{
+
+    background:#991b1b;
+    color:#fecaca;
+
+}
