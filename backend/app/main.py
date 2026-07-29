@@ -8,6 +8,19 @@ from app.api.health import router as health_router
 #imports all the functions in one place and renders them for FastAPI
 app = FastAPI()
 
+origins = [
+    "http://localhost:5173",
+    "https://fleet-tracking-system-lyart.vercel.app",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 @app.on_event("startup")
 def startup():
 
