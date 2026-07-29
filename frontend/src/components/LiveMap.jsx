@@ -4,7 +4,7 @@ import {
     TileLayer,
     Popup
 } from "react-leaflet";
-import "../styles/fleetMap.css";
+import "../styles/FleetMap.css";
 import AnimatedMarker from "./AnimatedMarker";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
