@@ -268,34 +268,6 @@ https://fleettrackingsystem.onrender.com
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots here.
-
-```markdown
-## Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
-## Vehicles
-
-![Vehicles](screenshots/vehicles.png)
-
-## Analytics
-
-![Analytics](screenshots/analytics.png)
-
-## Alerts
-
-![Alerts](screenshots/alerts.png)
-
-## Live Map
-
-![Map](screenshots/map.png)
-```
-
----
-
 # 🔮 Future Improvements
 
 - MQTT Integration
