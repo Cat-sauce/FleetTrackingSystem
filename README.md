@@ -302,13 +302,13 @@ This project demonstrates:
 
 # 👨‍💻 Author
 
-**Harsh Raj**
+**Harsh Vardhan Saini**
 
 B.Tech Computer Science Engineering  
 UPES Dehradun
 
 - GitHub: https://github.com/Cat-sauce
-- LinkedIn: *(Add your LinkedIn URL here)*
+- LinkedIn: (https://www.linkedin.com/in/harsh-vardhan-saini-17b870334?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 
 ---
 
